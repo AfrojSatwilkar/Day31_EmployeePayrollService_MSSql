@@ -16,7 +16,5 @@ insert into employee_payroll(empname,salary,startDate) values('Virat',5263,'2016
 insert into employee_payroll(empname,salary,startDate) values('Kapil',78965,'2012-5-7');
 insert into employee_payroll(empname,salary,startDate) values('Hardik',7412,'2016-1-6');
 
-
-
-
-
+-- UC4
+select * from employee_payroll;
