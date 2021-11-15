@@ -46,3 +46,11 @@ select avg(salary) from employee_payroll where gender='F' group by gender;
 select min(salary) from employee_payroll where gender='F' group by gender;
 select max(salary) from employee_payroll where gender='F' group by gender;
 select count(salary) from employee_payroll where gender='F' group by gender;
+
+-- UC8
+alter table employee_payroll add phoneNumber varchar(250) after empname;
+alter table employee_payroll add address varchar(250) after phoneNumber;
+alter table employee_payroll add department varchar(250) not null after address;
+alter table employee_payroll alter address set default 'TBD';
+desc employee_payroll;
+select * from employee_payroll;
